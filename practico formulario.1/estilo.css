@@ -1,0 +1,123 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: url('./fondo-imagen.jpg.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(233, 233, 241);
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    background-color:rgb(3, 12, 51, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    width: 300px;;
+    border: 1px solid rgba(255, 255, 255, 0.2)
+
+}
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+    color: #e3e3e7;
+    font-style:italic;
+}
+
+.ingreso-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.ingreso-box i {
+    position:absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color:#666;
+    pointer-events:none;
+    z-index: 1;
+}
+
+.ingreso-box input::placeholder {
+    padding-left: 60px;
+    color: #999;
+    font-style: italic;
+}
+
+
+.ingreso-box input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 2px solid #5e5e5f;
+    border-radius: 10px;
+    font-size: 16px;
+    color: hsl(0, 5%, 96%);
+    background-color:transparent;
+    outline: none;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.recordame{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-style: italic;
+    color:#f0f0f0;
+    margin-bottom: 30px;
+
+}
+
+.recordame label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.recordame input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: rgb(205, 226, 13); /* cambia el color del check */
+    cursor: pointer;
+}
+
+
+
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    font-style:italic;
+    font-weight: 700;
+    background-color: #f4f4f7;
+    color: rgb(19, 18, 18);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registrar-link {
+    font-size: 12px;
+    text-align: center;
+    color:#f0f0f0;
+    font-style: italic;
+    padding: 5px;
+
+}
